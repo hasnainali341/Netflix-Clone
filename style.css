@@ -29,7 +29,7 @@
     flex-wrap: wrap;
 }
 
-.main button {
+button {
     background-color: red;
     color: white;
     border: none;
@@ -88,7 +88,7 @@
     /* Limit the maximum width */
 }
 
-.main #email {
+#email {
     width: 70%;
     /* Adjust width to fit smaller screens */
     max-width: 300px;
@@ -100,7 +100,7 @@
     padding: 0 11px;
 }
 
-.main .email-sec button {
+.email-sec button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -504,9 +504,6 @@ p {
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
-
-.faq-sec .sub-sec h2{
     text-align: center;
 }
 
@@ -516,11 +513,62 @@ p {
     gap: 10px;
 }
 
-.faq-sec .sub-sec p{
+.faq-sec .sub-sec .q-sec p{
     background-color: #232323;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
     align-items: center;
+}
+
+.faq-sec .email-sec {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: black;
+    color: rgb(153, 149, 149);
+}
+
+.footer * {
+    cursor: pointer;
+}
+
+.footer {
+    width: 75vw;
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 60vh;
+}
+
+footer .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    text-decoration: underline;
+}
+
+footer .wrapper li {
+    list-style: none;
+}
+
+footer .wrapper li:first-child {
+    grid-column: 1 / 5;
+}
+
+.footer button {
+    width: 120px;
+    max-width: 20vw;
+    background-color: #2323237a;
+    border: 1px solid white;
 }
