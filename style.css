@@ -29,7 +29,7 @@
     flex-wrap: wrap;
 }
 
-button {
+.main button {
     background-color: red;
     color: white;
     border: none;
@@ -88,7 +88,7 @@ button {
     /* Limit the maximum width */
 }
 
-#email {
+.main #email {
     width: 70%;
     /* Adjust width to fit smaller screens */
     max-width: 300px;
@@ -100,7 +100,7 @@ button {
     padding: 0 11px;
 }
 
-.email-sec button {
+.main .email-sec button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,13 +196,13 @@ button {
     gap: 20px;
 }
 
- h2 {
+.sec-1 .sub-sec .text-sec h2 {
     font-size: 3em;
     font-weight: 900px;
 
 }
 
-p {
+.sec-1 .sub-sec .text-sec p {
     font-size: 1.5em;
     font-weight: 400px;
 }
@@ -495,80 +495,4 @@ p {
     .sec-4 .sub-sec .text-sec p {
         font-size: 1rem;
     }
-}
-
-.faq-sec .sub-sec {
-    width: 75vw;
-    margin: auto;
-    padding: 5% 0;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-}
-
-.faq-sec .sub-sec .q-sec {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.faq-sec .sub-sec .q-sec p{
-    background-color: #232323;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    align-items: center;
-}
-
-.faq-sec .email-sec {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-footer {
-    background-color: black;
-    color: rgb(153, 149, 149);
-}
-
-.footer * {
-    cursor: pointer;
-}
-
-.footer {
-    width: 75vw;
-    margin: auto;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    height: 60vh;
-}
-
-footer .wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    text-decoration: underline;
-}
-
-footer .wrapper li {
-    list-style: none;
-}
-
-footer .wrapper li:first-child {
-    grid-column: 1 / 5;
-}
-
-.footer button {
-    width: 120px;
-    max-width: 20vw;
-    background-color: #2323237a;
-    border: 1px solid white;
 }
