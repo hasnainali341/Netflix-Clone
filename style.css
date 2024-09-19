@@ -237,7 +237,6 @@ p {
 }
 
 .sec-1 .sub-sec .image-sec {
-  width: 550px;
   position: relative;
   display: grid;
   justify-items: center;
@@ -248,6 +247,7 @@ p {
 
 .sec-1 .sub-sec .image-sec img {
   width: 550px;
+  max-width: 90%;
   grid-row: 1 / 2;
   position: relative;
   z-index: 5;
@@ -271,9 +271,6 @@ p {
     text-align: center;
   }
 
-  .sec-1 .sub-sec .image-sec {
-    scale: 2;
-  }
 }
 
 @media (max-width: 768px) {
@@ -617,6 +614,7 @@ footer .wrapper li {
   list-style: none;
   cursor: var(--cursor-hand);
   width: fit-content;
+  transition: 0.3s;
 }
 
 footer .wrapper li:first-child {
